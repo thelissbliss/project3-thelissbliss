@@ -20,7 +20,7 @@ ClaimCheck ParkingLot::dropOff( const Automobile& vehicle ) {
   //parked cars.
   ///   Hint:  Create a ParkedCar and set its vehicle and claim number
   //attributes, then push it on to the stack.
-  ParkedCar pc;
+  ParkedCar {vehicle, claimNumber};
   pc.vehicle_ = vehicle;
   pc.claimNumber_ = claimNumber;
   ///

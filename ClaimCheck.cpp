@@ -15,17 +15,13 @@ size_t ClaimCheck::nextAvailableClaimNumber = 100;
 ** Member function definitions
 *******************************************************************************/
 ClaimCheck::ClaimCheck( const Automobile & vehicle )
-  : vehicle_(vehicle)
+  : vehicle_(vehicle),
     /// To be completed:
     ///   Initialize claimNumber_ to the next available claim number while
     ///   post-incrementing the next available claim number
 
     ///
-{
-
-  nextAvailableClaimNumber = claimNumber_;
-  nextAvailableClaimNumber++;
-}
+ClaimCheck_(nextAvailableClaimNumber++){}
 
 
 
