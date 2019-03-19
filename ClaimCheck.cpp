@@ -21,7 +21,7 @@ ClaimCheck::ClaimCheck( const Automobile & vehicle )
     ///   post-incrementing the next available claim number
 
     ///
-ClaimCheck_(nextAvailableClaimNumber++){}
+ClaimCheck(nextAvailableClaimNumber++){}
 
 
 
