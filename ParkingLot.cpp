@@ -22,11 +22,6 @@ ClaimCheck ParkingLot::dropOff( const Automobile& vehicle ) {
   ///   Hint:  Create a ParkedCar and set its vehicle and claim number
   //attributes, then push it on to the stack.
 
-  /*
-  size_t claimNumber;
-  ParkedCar {vehicle, claimNumber};
-  */
-
   parkedCars_.push(ParkedCar {vehicle, ticket.claimNumber()});
 
   ///
@@ -55,9 +50,8 @@ Automobile ParkingLot::pickUp( const ClaimCheck& ticket ) {
   //this is how we'll compare the automobiles
   bool operator==( const Automobile& lhs, const Automobile& rhs ) {
     if(lhs.color == rhs.color) && if(lhs.brand == rhs.brand) &&
-    if(lhs.model == rhs.model) && if (lhs.plateNumber == rhs.plateNumber) {
+    if(lhs.model == rhs.model) && if (lhs.plateNumber == rhs.plateNumber)
       return true;
-    }
     else
       throw std::invalid_argument;
   }
