@@ -21,19 +21,20 @@ ClaimCheck ParkingLot::dropOff( const Automobile& vehicle ) {
   //parked cars.
   ///   Hint:  Create a ParkedCar and set its vehicle and claim number
   //attributes, then push it on to the stack.
+
+  /*
+  size_t claimNumber;
   ParkedCar {vehicle, claimNumber};
+  */
+
+  parkedCars_.push(ParkedCar {vehicle, ticket.claimNumber()});
 
   ///
 
   return ticket;
 }
 
-struct ParkedCar {
-	//store a car and ticket number together
-	Automobile car;
-	size_t ticket;
 
-}
 
 Automobile ParkingLot::pickUp( const ClaimCheck& ticket ) {
   /// To be completed:
@@ -41,11 +42,15 @@ Automobile ParkingLot::pickUp( const ClaimCheck& ticket ) {
   ///   find the one you're looking for or until you looked at them all.
   ///   Hint:  The vehicle you're looking for has a ticket claim number that
   //matches the parked car's claim number.
-  
-  std::Queue<ParkedCar> lot;
+
+
+  std::queue<ParkedCar> lot;
   ///
+  /*
   Stack<ParkedCar> lot; //stack
   list<ParkedCar> lot; //DLL
+  */
+
 
   //this is how we'll compare the automobiles
   bool operator==( const Automobile& lhs, const Automobile& rhs ) {
