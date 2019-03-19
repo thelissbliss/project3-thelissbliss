@@ -40,23 +40,10 @@ Automobile ParkingLot::pickUp( const ClaimCheck& ticket ) {
 
 
   std::queue<ParkedCar> lot;
-  ///
-  /*
-  Stack<ParkedCar> lot; //stack
-  list<ParkedCar> lot; //DLL
-  */
+
 }
 
-/*
-  //this is how we'll compare the automobiles
-  bool operator==( const Automobile& lhs, const Automobile& rhs ) {
-    if(lhs.color_ == rhs.color_) && if(lhs.brand_ == rhs.brand_) &&
-    if(lhs.model_ == rhs.model_) && if (lhs.plateNumber_ == rhs.plateNumber_)
-      return true;
-    else
-      throw std::invalid_argument
-  }
-*/
+
 
 //this is how we'll compare the automobiles
 bool operator==( const Automobile& lhs, const Automobile& rhs ) {
