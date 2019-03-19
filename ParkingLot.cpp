@@ -38,8 +38,7 @@ Automobile ParkingLot::pickUp( const ClaimCheck& ticket ) {
   ///   Hint:  The vehicle you're looking for has a ticket claim number that
   //matches the parked car's claim number.
 
-
-  std::queue<ParkedCar> lot;
+  parkedCars_.push(ParkedCar {ticket.vehicle(), ticket.claimNumber()});
 
 }
 
