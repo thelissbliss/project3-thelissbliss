@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include<fstream>
 #include "Automobile.hpp"
 #include "ClaimCheck.hpp"
 
@@ -63,6 +63,8 @@ std::ostream & operator<<( std::ostream & stream, const ClaimCheck & ticket )
   /// To be completed:
   ///   insert the ticket's vehicle and claim number into the stream then
   //return the stream
-
+  stream << ticket.vehicle_;
+  stream << ticket.claimNumber_;
+  return stream;
   ///
 }
