@@ -19,15 +19,9 @@ Automobile::Automobile( const std::string & color,
 
 
 
-
-
-
 /*******************************************************************************
 ** Non-member function definitions
 *******************************************************************************/
-
-
-
 
 std::ostream & operator<<( std::ostream& stream, const Automobile& vehicle )
 {
@@ -35,14 +29,11 @@ std::ostream & operator<<( std::ostream& stream, const Automobile& vehicle )
   ///   Insert the vehicle's color, brand, model, and license plate number into
   // the stream, then return the stream
 
-  //ostream operator << (ostream stream, Automobile car) {
   	stream << vehicle.color_;
   	stream << "Make =" << vehicle.brand_;
     stream << vehicle.model_;
     stream << vehicle.plateNumber_;
 
     return stream;
-  //}
 
-  ///
 }
