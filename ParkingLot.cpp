@@ -45,17 +45,27 @@ Automobile ParkingLot::pickUp( const ClaimCheck& ticket ) {
   Stack<ParkedCar> lot; //stack
   list<ParkedCar> lot; //DLL
   */
+}
 
-
+/*
   //this is how we'll compare the automobiles
   bool operator==( const Automobile& lhs, const Automobile& rhs ) {
-    if(lhs.color == rhs.color) && if(lhs.brand == rhs.brand) &&
-    if(lhs.model == rhs.model) && if (lhs.plateNumber == rhs.plateNumber)
+    if(lhs.color_ == rhs.color_) && if(lhs.brand_ == rhs.brand_) &&
+    if(lhs.model_ == rhs.model_) && if (lhs.plateNumber_ == rhs.plateNumber_)
       return true;
     else
-      throw std::invalid_argument;
+      throw std::invalid_argument
   }
+*/
 
+//this is how we'll compare the automobiles
+bool operator==( const Automobile& lhs, const Automobile& rhs ) {
+  if((lhs.color_ == rhs.color_) && (lhs.brand_ == rhs.brand_) &&
+  (lhs.model_ == rhs.model_) && (lhs.plateNumber_ == rhs.plateNumber_))
+    return true;
+  else
+    std::cout << "Error.";
+}
 
 
   bool operator!=( const Automobile& lhs, const Automobile& rhs )
@@ -68,7 +78,7 @@ Automobile ParkingLot::pickUp( const ClaimCheck& ticket ) {
   ///    print out an error message and return the ticket's vehicle.
 
   ///
-}
+
 
 
 
