@@ -1,4 +1,5 @@
 #include <iostream>
+#include<ostream>
 #include <string>
 
 #include "Automobile.hpp"
@@ -23,25 +24,20 @@ Automobile::Automobile( const std::string & color,
 /*******************************************************************************
 ** Non-member function definitions
 *******************************************************************************/
-bool operator==( const Automobile& lhs, const Automobile& rhs ) {
-  /// To be completed:
-  ///   Return true if each attribute of the left hand side (lhs) is
-  ///   equal to the right hand side (rhs)
-  . . .
-  ///
-}
 
-
-
-bool operator!=( const Automobile& lhs, const Automobile& rhs )
-{ return !( lhs == rhs ); }
 
 
 
 std::ostream & operator<<( std::ostream& stream, const Automobile& vehicle )
 {
   /// To be completed:
-  ///   Insert the vehicle's color, brand, model, and license plate number into the stream, then return the stream
-  . . .
+  ///   Insert the vehicle's color, brand, model, and license plate number into
+  // the stream, then return the stream
+
+  ostream operator << (ostream stream, Automobile car) {
+  	stream << car.color;
+  	stream << "Make =" << car.make;
+  }
+
   ///
 }
