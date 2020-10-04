@@ -1,6 +1,8 @@
-# Project 3 - Student Valet Parking
-### CSUF CPSC 131, Spring 2019
+# Valet Service
 
-MUST EDIT WITH YOUR OWN NAME AND EMAIL IN THE SAME FORMAT
+Valet system for check in and check out.
+Language: C++
 
-Alyssa Bright alyssabright@csu.fullerton.edu
+Credit:
+- Alyssa Bright
+- Project for coursework at CSUF
